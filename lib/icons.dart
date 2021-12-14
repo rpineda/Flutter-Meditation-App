@@ -1,11 +1,11 @@
-class MeditationSvgAssets {
-  static final MeditationSvgAssets _instance = MeditationSvgAssets._internal();
+class HappyPassSvgAssets {
+  static final HappyPassSvgAssets _instance = HappyPassSvgAssets._internal();
 
-  factory MeditationSvgAssets() {
+  factory HappyPassSvgAssets() {
     return _instance;
   }
 
-  MeditationSvgAssets._internal();
+  HappyPassSvgAssets._internal();
 
   Map<AssetName, String> assets = {
     AssetName.search: "assets/icons/search.svg",
@@ -20,7 +20,8 @@ class MeditationSvgAssets {
     AssetName.chart: "assets/icons/chart.svg",
     AssetName.discover: "assets/icons/discover.svg",
     AssetName.profile: "assets/icons/profile.svg",
-
+    AssetName.ticket: "assets/icons/ticket.svg",
+    AssetName.creditCardPayment: "assets/icons/credit-card-regular.svg",
   };
 }
 
@@ -36,6 +37,7 @@ enum AssetName {
   heart,
   chart,
   discover,
-  profile
-
+  profile,
+  ticket,
+  creditCardPayment,
 }

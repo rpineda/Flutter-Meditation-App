@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:meditation/charts_page.dart';
-import 'package:meditation/discover_page.dart';
-import 'package:meditation/icons.dart';
-import 'package:meditation/widgets/profile_page.dart';
-import 'package:meditation/widgets/svg_asset.dart';
+import 'package:happy_pass/charts_page.dart';
+import 'package:happy_pass/discover_page.dart';
+import 'package:happy_pass/icons.dart';
+import 'package:happy_pass/profile_page.dart';
+import 'package:happy_pass/widgets/svg_asset.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);

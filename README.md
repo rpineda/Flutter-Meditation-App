@@ -1,5 +1,5 @@
-# Flutter Meditation App
-A Meditation App UI template made using flutter and dart.
+# Flutter Happy Pass App
+A Happy Pass App UI template made using flutter and dart.
 
 ### Please star the repo to support the project
 

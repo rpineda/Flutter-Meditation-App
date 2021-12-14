@@ -1,4 +1,4 @@
-package com.example.meditation
+package com.example.happy_pass
 
 import io.flutter.embedding.android.FlutterActivity
 

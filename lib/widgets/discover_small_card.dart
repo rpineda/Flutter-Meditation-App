@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:meditation/icons.dart';
-import 'package:meditation/widgets/svg_asset.dart';
+import 'package:happy_pass/icons.dart';
+import 'package:happy_pass/widgets/svg_asset.dart';
 
 class DiscoverSmallCard extends StatelessWidget {
   final String? title;

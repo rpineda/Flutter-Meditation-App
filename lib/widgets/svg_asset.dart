@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:meditation/icons.dart';
+import 'package:happy_pass/icons.dart';
 
 class SvgAsset extends StatelessWidget {
   final AssetName? assetName;
@@ -18,7 +18,7 @@ class SvgAsset extends StatelessWidget {
       height: height,
       width: width,
       child: SvgPicture.asset(
-        MeditationSvgAssets().assets[assetName]!,
+        HappyPassSvgAssets().assets[assetName]!,
         fit: fit ?? BoxFit.cover,
         color: color,
       ),

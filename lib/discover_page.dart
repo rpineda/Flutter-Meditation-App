@@ -2,12 +2,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:meditation/detail_page.dart';
-import 'package:meditation/widgets/category_boxes.dart';
-import 'package:meditation/icons.dart';
-import 'package:meditation/widgets/discover_card.dart';
-import 'package:meditation/widgets/discover_small_card.dart';
-import 'package:meditation/widgets/svg_asset.dart';
+import 'package:happy_pass/detail_page.dart';
+import 'package:happy_pass/widgets/category_boxes.dart';
+import 'package:happy_pass/icons.dart';
+import 'package:happy_pass/widgets/discover_card.dart';
+import 'package:happy_pass/widgets/discover_small_card.dart';
+import 'package:happy_pass/widgets/svg_asset.dart';
 
 class DiscoverPage extends StatefulWidget {
   const DiscoverPage({
@@ -36,7 +36,7 @@ class _DiscoverPageState extends State<DiscoverPage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("Discover",
+                  Text("Actividades",
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 34.w,
@@ -68,20 +68,21 @@ class _DiscoverPageState extends State<DiscoverPage> {
                   SizedBox(
                     width: 28.w,
                   ),
+
                   CategoryBoxes(
-                    text: "Insomnia",
+                    text: "Ruta maya",
                     onPressed: (value) => print(value),
                   ),
                   CategoryBoxes(
-                    text: "Depression",
+                    text: "Manglares",
                     onPressed: (value) => print(value),
                   ),
                   CategoryBoxes(
-                    text: "Baby Sleep",
+                    text: "Nado con delfines",
                     onPressed: (value) => print(value),
                   ),
                   CategoryBoxes(
-                    text: "Insomnia",
+                    text: "Comida típica",
                     onPressed: (value) => print(value),
                   ),
                 ],
@@ -93,7 +94,7 @@ class _DiscoverPageState extends State<DiscoverPage> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    "Recommended",
+                    "Recomendados",
                     style: TextStyle(
                         color: Color(0xff515979),
                         fontWeight: FontWeight.w500,
@@ -101,7 +102,7 @@ class _DiscoverPageState extends State<DiscoverPage> {
                   ),
                   GestureDetector(
                       onTap: onSeeAllTapped,
-                      child: Text("See All",
+                      child: Text("Ver todos",
                           style: TextStyle(
                               color: Color(0xff4A80F0),
                               fontWeight: FontWeight.w500,
@@ -120,16 +121,16 @@ class _DiscoverPageState extends State<DiscoverPage> {
                 children: [
                   SizedBox(width: 28.w),
                   DiscoverCard(
-                    tag: "sleepMeditation",
-                    onTap: onSleepMeditationTapped,
-                    title: "Sleep Meditation",
-                    subtitle: "7 Day Audio and Video Series",
+                    tag: "roadTripInTucTucHappyPass",
+                    onTap: onDepressionHealingTapped,
+                    title: "Nado con delfines",
+                    subtitle: "Disfrutar del nado con delfines \nmientras jugamos con ellos",
                   ),
                   SizedBox(width: 20.w),
                   DiscoverCard(
-                    onTap: onDepressionHealingTapped,
-                    title: "Depression Healing",
-                    subtitle: "10 Days Audio and Video Series",
+                    onTap: onSleepHappyPassTapped,
+                    title: "Viaje en Tuc Tuc",
+                    subtitle: "Visita a establecimientos \nde artesanías",
                     gradientStartColor: Color(0xffFC67A7),
                     gradientEndColor: Color(0xffF6815B),
                   ),
@@ -140,7 +141,7 @@ class _DiscoverPageState extends State<DiscoverPage> {
             Padding(
               padding: EdgeInsets.only(left: 28.w),
               child: Text(
-                "Recent",
+                "Recientes",
                 style: TextStyle(
                     color: Color(0xff515979),
                     fontWeight: FontWeight.w500,
@@ -156,32 +157,42 @@ class _DiscoverPageState extends State<DiscoverPage> {
                 children: [
                   DiscoverSmallCard(
                     onTap: (){},
-                    title: "Calming Sounds",
+                    title: "Entrenando delfines",
                     gradientStartColor: Color(0xff13DEA0),
                     gradientEndColor: Color(0xff06B782),
-                  ),
-                  DiscoverSmallCard(
-                    onTap: (){},
-                    title: "Insomnia",
-                    gradientStartColor: Color(0xffFC67A7),
-                    gradientEndColor: Color(0xffF6815B),
-                    icon:    SvgAsset(
-                      assetName: AssetName.tape,
+                    icon:  SvgAsset(
+                      assetName: AssetName.ticket,
                       height: 24.w,
                       width: 24.w,
                     ),
                   ),
                   DiscoverSmallCard(
                     onTap: (){},
-                    title: "For Children",
-                    gradientStartColor: Color(0xffFFD541),
-                    gradientEndColor: Color(0xffF0B31A),
+                    title: "Snorkel con delfines",
+                    gradientStartColor: Color(0xffFC67A7),
+                    gradientEndColor: Color(0xffF6815B),
+                    icon:    SvgAsset(
+                      assetName: AssetName.ticket,
+                      height: 24.w,
+                      width: 24.w,
+                    ),
                   ),
                   DiscoverSmallCard(
                     onTap: (){},
-                    title: "Tips For Sleeping",
+                    title: "Barco con fondo de vidrio",
+                    gradientStartColor: Color(0xffFFD541),
+                    gradientEndColor: Color(0xffF0B31A),
                     icon:  SvgAsset(
-                      assetName: AssetName.tape,
+                      assetName: AssetName.ticket,
+                      height: 24.w,
+                      width: 24.w,
+                    ),
+                  ),
+                  DiscoverSmallCard(
+                    onTap: (){},
+                    title: "Mayan Eden eco park",
+                    icon:  SvgAsset(
+                      assetName: AssetName.ticket,
                       height: 24.w,
                       width: 24.w,
                     ),
@@ -200,7 +211,7 @@ class _DiscoverPageState extends State<DiscoverPage> {
   void onSeeAllTapped() {
   }
 
-  void onSleepMeditationTapped() {
+  void onSleepHappyPassTapped() {
     Get.to(()=> DetailPage(), transition: Transition.rightToLeft);
   }
 

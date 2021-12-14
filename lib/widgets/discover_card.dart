@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:meditation/icons.dart';
-import 'package:meditation/widgets/svg_asset.dart';
+import 'package:happy_pass/icons.dart';
+import 'package:happy_pass/widgets/svg_asset.dart';
 
 class DiscoverCard extends StatelessWidget {
   final String? title;
@@ -108,13 +108,13 @@ class DiscoverCard extends StatelessWidget {
                       Row(
                         children: [
                           SvgAsset(
-                            assetName: AssetName.headphone,
+                            assetName: AssetName.heart,
                             height: 24.w,
                             width: 24.w,
                           ),
                           SizedBox(width: 24.w),
                           SvgAsset(
-                            assetName: AssetName.tape,
+                            assetName: AssetName.ticket,
                             height: 24.w,
                             width: 24.w,
                           ),
