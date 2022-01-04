@@ -7,10 +7,13 @@ A Happy Pass App UI template made using flutter and dart.
 
 <img src="assets/pics/appShots.png"   />
 
-### Created & Maintained By
+### Created By
 
-[Adeebullah Adab](https://github.com/iamadeeb) 
-([Instagram](https://www.instagram.com/iamadeeb)) ([LinkedIn](https://www.linkedin.com/in/adeebullah-adab-a95523109))
+[Ricardo Pineda]
+
+### Maintained By
+
+[Archangel Systems]
 
 
 
