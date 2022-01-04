@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "415598726668",
+    "project_id": "happy-pass-df",
+    "storage_bucket": "happy-pass-df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:415598726668:android:c2332d34180261e0f46829",
+        "android_client_info": {
+          "package_name": "com.archangelsystems.happy_pass"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "415598726668-sn14vv5elf6ghevhhn3snvb9ris8eq82.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.archangelsystems.happy_pass",
+            "certificate_hash": "987eda99a603fb9281eae4a32a80004182bfb0ae"
+          }
+        },
+        {
+          "client_id": "415598726668-772oj1a552l3r0869oo6i7n6kgoig9sr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBcVq_cG1OgdvWABZ070ITGcyqVE9WmEA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "415598726668-772oj1a552l3r0869oo6i7n6kgoig9sr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

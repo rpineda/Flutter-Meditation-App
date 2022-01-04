@@ -11,10 +11,23 @@ dependencies:
   flutter_svg: ^0.23.0+1
   get: ^4.3.8
 #  card_scanner: 0.2.2
+
+  firebase_core:
+  cloud_firestore:
+  geoflutterfire:
+  
+  # google_maps_flutter:
+  # google_map_polyline:
+
+  location:
+  rxdart:
+
   flutter:
     sdk: flutter
 
   cupertino_icons: ^1.0.2
+  google_maps_flutter: ^2.1.1
+  google_map_polyline_new: ^0.3.0+2
 
 dev_dependencies:
   flutter_test:

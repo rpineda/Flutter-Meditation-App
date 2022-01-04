@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+// import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:happy_pass/icons.dart';
@@ -35,7 +35,7 @@ class DiscoverSmallCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       borderRadius: BorderRadius.circular(20),
-      onTap:()=> onTap ?? () {},
+      onTap: () => onTap ?? () {},
       child: Ink(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),

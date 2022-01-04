@@ -22,6 +22,7 @@ class HappyPassSvgAssets {
     AssetName.profile: "assets/icons/profile.svg",
     AssetName.ticket: "assets/icons/ticket.svg",
     AssetName.creditCardPayment: "assets/icons/credit-card-regular.svg",
+    AssetName.roadMap: "assets/icons/road-map.svg",
   };
 }
 
@@ -40,4 +41,5 @@ enum AssetName {
   profile,
   ticket,
   creditCardPayment,
+  roadMap,
 }

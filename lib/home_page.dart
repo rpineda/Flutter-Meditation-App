@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:happy_pass/charts_page.dart';
 import 'package:happy_pass/discover_page.dart';
 import 'package:happy_pass/icons.dart';
-import 'package:happy_pass/profile_page.dart';
+import 'package:happy_pass/map_page.dart';
+// import 'package:happy_pass/profile_page.dart';
+import 'package:happy_pass/route_page.dart';
 import 'package:happy_pass/widgets/svg_asset.dart';
 
 class HomePage extends StatefulWidget {
@@ -17,7 +20,9 @@ class _HomePageState extends State<HomePage> {
   static const List<Widget> _widgetOptions = <Widget>[
     DiscoverPage(),
     ChartsPage(),
-    ProfilePage()
+    // ProfilePage(),
+    MapPage(),
+    RoutePage(),
   ];
 
   void _onItemTapped(int index) {
@@ -98,6 +103,32 @@ class _HomePageState extends State<HomePage> {
                 child: SvgAsset(
                   assetName: AssetName.profile,
                   color: Color(0xff4A80F0),
+                ),
+              ),
+            ),
+            BottomNavigationBarItem(
+              icon: SvgAsset(
+                assetName: AssetName.roadMap,
+                height: 24.h,
+                width: 24.w,
+              ),
+              label: '',
+              tooltip: 'Road Map',
+              activeIcon: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(12),
+                  boxShadow: [
+                    BoxShadow(
+                        color: Color(0xff4A80F0).withOpacity(0.3),
+                        offset: Offset(0, 4),
+                        blurRadius: 20),
+                  ],
+                ),
+                child: SvgAsset(
+                  assetName: AssetName.roadMap,
+                  color: Color(0xff4A80F0),
+                  height: 24.h,
+                  width: 24.w,
                 ),
               ),
             ),

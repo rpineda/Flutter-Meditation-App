@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+// import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -68,7 +68,6 @@ class _DiscoverPageState extends State<DiscoverPage> {
                   SizedBox(
                     width: 28.w,
                   ),
-
                   CategoryBoxes(
                     text: "Ruta maya",
                     onPressed: (value) => print(value),
@@ -124,7 +123,8 @@ class _DiscoverPageState extends State<DiscoverPage> {
                     tag: "roadTripInTucTucHappyPass",
                     onTap: onDepressionHealingTapped,
                     title: "Nado con delfines",
-                    subtitle: "Disfrutar del nado con delfines \nmientras jugamos con ellos",
+                    subtitle:
+                        "Disfrutar del nado con delfines \nmientras jugamos con ellos",
                   ),
                   SizedBox(width: 20.w),
                   DiscoverCard(
@@ -150,55 +150,59 @@ class _DiscoverPageState extends State<DiscoverPage> {
             ),
             SizedBox(height: 16.h),
             Padding(
-              padding:  EdgeInsets.symmetric(horizontal: 28.w),
-              child: GridView(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2, crossAxisSpacing: 19.w, mainAxisExtent:  125.w, mainAxisSpacing: 19.w),
+              padding: EdgeInsets.symmetric(horizontal: 28.w),
+              child: GridView(
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2,
+                    crossAxisSpacing: 19.w,
+                    mainAxisExtent: 125.w,
+                    mainAxisSpacing: 19.w),
                 shrinkWrap: true,
                 physics: NeverScrollableScrollPhysics(),
                 children: [
                   DiscoverSmallCard(
-                    onTap: (){},
+                    onTap: () {},
                     title: "Entrenando delfines",
                     gradientStartColor: Color(0xff13DEA0),
                     gradientEndColor: Color(0xff06B782),
-                    icon:  SvgAsset(
+                    icon: SvgAsset(
                       assetName: AssetName.ticket,
                       height: 24.w,
                       width: 24.w,
                     ),
                   ),
                   DiscoverSmallCard(
-                    onTap: (){},
+                    onTap: () {},
                     title: "Snorkel con delfines",
                     gradientStartColor: Color(0xffFC67A7),
                     gradientEndColor: Color(0xffF6815B),
-                    icon:    SvgAsset(
+                    icon: SvgAsset(
                       assetName: AssetName.ticket,
                       height: 24.w,
                       width: 24.w,
                     ),
                   ),
                   DiscoverSmallCard(
-                    onTap: (){},
+                    onTap: () {},
                     title: "Barco con fondo de vidrio",
                     gradientStartColor: Color(0xffFFD541),
                     gradientEndColor: Color(0xffF0B31A),
-                    icon:  SvgAsset(
+                    icon: SvgAsset(
                       assetName: AssetName.ticket,
                       height: 24.w,
                       width: 24.w,
                     ),
                   ),
                   DiscoverSmallCard(
-                    onTap: (){},
+                    onTap: () {},
                     title: "Mayan Eden eco park",
-                    icon:  SvgAsset(
+                    icon: SvgAsset(
                       assetName: AssetName.ticket,
                       height: 24.w,
                       width: 24.w,
                     ),
                   ),
                 ],
-
               ),
             )
           ],
@@ -207,17 +211,15 @@ class _DiscoverPageState extends State<DiscoverPage> {
     );
   }
 
-
-  void onSeeAllTapped() {
-  }
+  void onSeeAllTapped() {}
 
   void onSleepHappyPassTapped() {
-    Get.to(()=> DetailPage(), transition: Transition.rightToLeft);
+    Get.to(() => DetailPage(), transition: Transition.rightToLeft);
   }
 
   void onDepressionHealingTapped() {
+    Get.to(() => DetailPage(), transition: Transition.rightToLeft);
   }
 
-  void onSearchIconTapped() {
-  }
+  void onSearchIconTapped() {}
 }

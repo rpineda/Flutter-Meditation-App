@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:happy_pass/widgets/establishment_form.dart';
-import 'package:happy_pass/widgets/payment_boxes.dart';
-import 'package:happy_pass/widgets/payment_form.dart';
-import 'package:happy_pass/widgets/svg_asset.dart';
+// import 'package:happy_pass/widgets/payment_boxes.dart';
+// import 'package:happy_pass/widgets/payment_form.dart';
+// import 'package:happy_pass/widgets/svg_asset.dart';
 
-import 'icons.dart';
-
+// import 'icons.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({
@@ -17,7 +16,7 @@ class ProfilePage extends StatefulWidget {
   State<ProfilePage> createState() => _ProfilePageState();
 }
 
-class _ProfilePageState extends State<ProfilePage>{
+class _ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,11 +26,7 @@ class _ProfilePageState extends State<ProfilePage>{
           physics: BouncingScrollPhysics(),
           children: [
             Padding(
-                padding: EdgeInsets.only(
-                    left: 28.w,
-                    right: 18.w,
-                    top: 36.h
-                ),
+                padding: EdgeInsets.only(left: 28.w, right: 18.w, top: 36.h),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -41,14 +36,13 @@ class _ProfilePageState extends State<ProfilePage>{
                             fontSize: 34.w,
                             fontWeight: FontWeight.bold)),
                   ],
-                )
-            ),
+                )),
             Container(
               height: 120.h,
               child: Padding(
                 padding: EdgeInsets.symmetric(horizontal: 28.w, vertical: 16.h),
                 child: Text(
-                    "El registro del establecimiento es gratuito, sin embargo la activación depende de la aprobación de Happy Pass",
+                  "El registro del establecimiento es gratuito, sin embargo la activación depende de la aprobación de Happy Pass",
                   style: TextStyle(color: Colors.white),
                 ),
               ),
@@ -73,8 +67,7 @@ class _ProfilePageState extends State<ProfilePage>{
             ),
             Padding(
                 padding: EdgeInsets.symmetric(horizontal: 28.w),
-                child: EstablishmentForm()
-            )
+                child: EstablishmentForm())
           ],
         ),
       ),

@@ -1,4 +1,4 @@
-package com.example.happy_pass
+package com.archangelsystems.happy_pass
 
 import io.flutter.embedding.android.FlutterActivity
 
